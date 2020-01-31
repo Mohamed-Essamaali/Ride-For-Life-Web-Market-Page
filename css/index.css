@@ -140,15 +140,19 @@ body {
   width: 90%;
   margin: 0 2.5%;
   padding: 2%;
-  background-color: #F93822FF;
-  color: #FDD20EFF;
+  background-image: linear-gradient(#e95b4c, rgba(199, 118, 118, 0.541));
+  color: #f3f709;
+}
+.about-section h2 {
+  font-size: 2rem;
 }
 .about-section .btn {
   display: inline-block;
   font-size: 1.3rem;
   padding: 0.6%;
   border-radius: 8px;
-  background-color: #4a5b88;
+  background-color: #e4877b;
+  text-shadow: white;
   border: none;
   text-decoration: none;
   margin: 2% 0;
@@ -172,17 +176,17 @@ body header {
 }
 body header .header-img {
   width: 100%;
-  background-color: #FEE715FF;
   color: #101820FF;
+  background-color: rgba(211, 211, 82, 0.664);
   background-image: url("../img/header-img.png");
   background-repeat: no-repeat;
-  background-position: right;
-  height: 35vh;
+  background-position: 75%, 3%;
+  height: 45vh;
 }
-@media (max-width-500px) {
+@media (max-width:500px) {
   body header .header-img {
     background-image: none;
-    height: 20vh;
+    height: 25vh;
   }
 }
 body header .header-img .header-img-info {
@@ -190,7 +194,7 @@ body header .header-img .header-img-info {
   padding: 7% 0 0 2%;
   height: 24vh;
 }
-@media (max-width-500px) {
+@media (max-width:500px) {
   body header .header-img .header-img-info {
     width: 100%;
     font-size: medium;
@@ -198,7 +202,12 @@ body header .header-img .header-img-info {
   }
 }
 body header .header-img .header-img-info h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+@media (max-width:500px) {
+  body header .header-img .header-img-info h2 {
+    font-size: 1.5rem;
+  }
 }
 body header .header-img .header-img-info p {
   font-size: 1.2rem;
@@ -212,10 +221,9 @@ body header nav {
   height: 10vh;
   font-size: 2vw;
   color: #FEE715FF;
-  background: #101820FF;
-  font-weight: 600;
+  background: rgba(36, 34, 34, 0.781);
 }
-@media (max-width-500px) {
+@media (max-width:500px) {
   body header nav {
     font-size: 0.8rem;
     display: flex;
@@ -229,7 +237,7 @@ body header nav #logo {
   width: 10%;
   background: #FEE715FF;
 }
-@media (max-width-500px) {
+@media (max-width:500px) {
   body header nav #logo {
     display: none;
     width: 20%;
@@ -237,7 +245,7 @@ body header nav #logo {
 }
 body header nav .nav-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   width: 50%;
@@ -246,12 +254,12 @@ body header nav .nav-links {
 body header nav .nav-links #home-tab {
   display: none;
 }
-@media (max-width-500px) {
+@media (max-width:500px) {
   body header nav .nav-links #home-tab {
     display: inline;
   }
 }
-@media (max-width-500px) {
+@media (max-width:500px) {
   body header nav .nav-links {
     font-size: 1.2rem;
     display: flex;
@@ -264,39 +272,59 @@ body header nav .nav-links a {
   text-align: center;
   text-decoration: none;
 }
-body header nav .nav-links a:hover {
+body header nav .nav-links a:active {
   border-bottom: 5px solid #FEE715FF;
   font-size: 2rem;
 }
-@media (max-width-500px) {
+@media (max-width:500px) {
   body header nav .nav-links a {
     padding: 1%;
   }
 }
-body header nav a {
+body header nav #sign {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 25%;
+}
+@media (max-width:500px) {
+  body header nav #sign {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+body header nav #sign a {
   text-align: center;
   text-decoration: none;
 }
-body header nav a:focus {
-  border-bottom: 5px solid #8b8788;
-}
-@media (max-width-500px) {
-  body header nav a {
+@media (max-width:500px) {
+  body header nav #sign a {
     padding: 1%;
   }
+}
+.rider-link a:active {
+  border-bottom: 5px solid #8b8788;
 }
 footer {
   height: 15vh;
   width: 90%;
   margin: 0 2.5%;
-  padding: 0 2%;
+  padding: 2%;
   color: #FEE715FF;
-  background: #101820FF;
+  background: rgba(36, 34, 34, 0.781);
   line-height: 1;
 }
-footer .copyRight {
-  text-align: center;
+footer h2 {
+  font-size: 2rem;
+  padding-bottom: 2%;
 }
 footer a {
   text-decoration: none;
+}
+footer .copyRight {
+  text-align: center;
 }
