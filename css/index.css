@@ -179,7 +179,7 @@ body header .header-img {
   background-position: right;
   height: 35vh;
 }
-@media (max-width-500px) {
+@media (max-width:500px) {
   body header .header-img {
     background-image: none;
     height: 20vh;
@@ -190,7 +190,7 @@ body header .header-img .header-img-info {
   padding: 7% 0 0 2%;
   height: 24vh;
 }
-@media (max-width-500px) {
+@media (max-width:500px) {
   body header .header-img .header-img-info {
     width: 100%;
     font-size: medium;
@@ -215,7 +215,7 @@ body header nav {
   background: #101820FF;
   font-weight: 600;
 }
-@media (max-width-500px) {
+@media (max-width:500px) {
   body header nav {
     font-size: 0.8rem;
     display: flex;
@@ -229,7 +229,7 @@ body header nav #logo {
   width: 10%;
   background: #FEE715FF;
 }
-@media (max-width-500px) {
+@media (max-width:500px) {
   body header nav #logo {
     display: none;
     width: 20%;
@@ -246,12 +246,12 @@ body header nav .nav-links {
 body header nav .nav-links #home-tab {
   display: none;
 }
-@media (max-width-500px) {
+@media (max-width:500px) {
   body header nav .nav-links #home-tab {
     display: inline;
   }
 }
-@media (max-width-500px) {
+@media (max-width:500px) {
   body header nav .nav-links {
     font-size: 1.2rem;
     display: flex;
@@ -264,11 +264,11 @@ body header nav .nav-links a {
   text-align: center;
   text-decoration: none;
 }
-body header nav .nav-links a:hover {
+body header nav .nav-links a:active {
   border-bottom: 5px solid #FEE715FF;
   font-size: 2rem;
 }
-@media (max-width-500px) {
+@media (max-width:500px) {
   body header nav .nav-links a {
     padding: 1%;
   }
@@ -280,7 +280,7 @@ body header nav a {
 body header nav a:focus {
   border-bottom: 5px solid #8b8788;
 }
-@media (max-width-500px) {
+@media (max-width:500px) {
   body header nav a {
     padding: 1%;
   }
