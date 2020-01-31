@@ -1,0 +1,302 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+p {
+  font-size: 1.2rem;
+}
+h1 {
+  font-size: 2rem;
+}
+html,
+body {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+}
+.about-section {
+  height: auto;
+  width: 90%;
+  margin: 0 2.5%;
+  padding: 2%;
+  background-color: #F93822FF;
+  color: #FDD20EFF;
+}
+.about-section .btn {
+  display: inline-block;
+  font-size: 1.3rem;
+  padding: 0.6%;
+  border-radius: 8px;
+  background-color: #4a5b88;
+  border: none;
+  text-decoration: none;
+  margin: 2% 0;
+}
+strong {
+  font-size: 2rem;
+}
+body {
+  background: rgba(0, 0, 0, 0.068);
+}
+body a {
+  color: #FEE715FF;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: column;
+  width: 94%;
+  margin: 0 2.5%;
+}
+body header .header-img {
+  width: 100%;
+  background-color: #FEE715FF;
+  color: #101820FF;
+  background-image: url("../img/header-img.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 35vh;
+}
+@media (max-width-500px) {
+  body header .header-img {
+    background-image: none;
+    height: 20vh;
+  }
+}
+body header .header-img .header-img-info {
+  width: 55%;
+  padding: 7% 0 0 2%;
+  height: 24vh;
+}
+@media (max-width-500px) {
+  body header .header-img .header-img-info {
+    width: 100%;
+    font-size: medium;
+    text-align: center;
+  }
+}
+body header .header-img .header-img-info h2 {
+  font-size: 1.5rem;
+}
+body header .header-img .header-img-info p {
+  font-size: 1.2rem;
+}
+body header nav {
+  padding: 1% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 10vh;
+  font-size: 2vw;
+  color: #FEE715FF;
+  background: #101820FF;
+  font-weight: 600;
+}
+@media (max-width-500px) {
+  body header nav {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 25vh;
+  }
+}
+body header nav #logo {
+  width: 10%;
+  background: #FEE715FF;
+}
+@media (max-width-500px) {
+  body header nav #logo {
+    display: none;
+    width: 20%;
+  }
+}
+body header nav .nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 50%;
+  margin: 0 10%;
+}
+body header nav .nav-links #home-tab {
+  display: none;
+}
+@media (max-width-500px) {
+  body header nav .nav-links #home-tab {
+    display: inline;
+  }
+}
+@media (max-width-500px) {
+  body header nav .nav-links {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+body header nav .nav-links a {
+  text-align: center;
+  text-decoration: none;
+}
+body header nav .nav-links a:hover {
+  border-bottom: 5px solid #FEE715FF;
+  font-size: 2rem;
+}
+@media (max-width-500px) {
+  body header nav .nav-links a {
+    padding: 1%;
+  }
+}
+body header nav a {
+  text-align: center;
+  text-decoration: none;
+}
+body header nav a:focus {
+  border-bottom: 5px solid #8b8788;
+}
+@media (max-width-500px) {
+  body header nav a {
+    padding: 1%;
+  }
+}
+footer {
+  height: 15vh;
+  width: 90%;
+  margin: 0 2.5%;
+  padding: 0 2%;
+  color: #FEE715FF;
+  background: #101820FF;
+  line-height: 1;
+}
+footer .copyRight {
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+}
