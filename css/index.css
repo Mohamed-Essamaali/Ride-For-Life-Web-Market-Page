@@ -160,6 +160,28 @@ body {
 strong {
   font-size: 1.5rem;
 }
+.group-members {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 2% 2.5%;
+  padding: 0 2%;
+}
+.group-members .member {
+  width: 35vw;
+  height: 65vh;
+  margin: 2%;
+}
+.group-members .member h3 {
+  font-size: 2rem;
+}
+.group-members .member img {
+  width: 22vw;
+  height: 40vh;
+}
 body {
   background: rgba(0, 0, 0, 0.068);
 }
