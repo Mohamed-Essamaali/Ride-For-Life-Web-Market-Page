@@ -31,8 +31,8 @@ header {
       
         
         width:100%;
-        color:#101820FF;
-        background-color: rgba(211, 211, 82, 0.664);
+        color:@header-color-img;
+        background-color: @header-bg-img;
 
         background-image: url("../img/header-img.png");
        
@@ -78,8 +78,8 @@ header {
         .dis_flx(space-between, center,row);
         height: 10vh;
         font-size: 2vw;
-        color:#FEE715FF;
-        background:rgba(36, 34, 34, 0.781);
+        color:@color-nav;
+        background:@bg-nav;
         // font-weight: 600;
     // media query    
         @media @mobile{
@@ -92,7 +92,7 @@ header {
 
         #logo {
             width:10%;
-            background:#FEE715FF;
+            background:@color-nav;
              // media query    
         @media @mobile{
            display: none;
@@ -123,7 +123,7 @@ header {
 
             a{
                 &:active {
-                    border-bottom: 5px solid  #FEE715FF;
+                   
                     font-size:2rem;
                 }
                 text-align: center;
@@ -159,10 +159,6 @@ header {
     
 }
 }
-.rider-link{
-    
-       a:active{ border-bottom: 5px solid #8b8788;}
-    
-}
+
 
 

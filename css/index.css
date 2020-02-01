@@ -158,7 +158,7 @@ body {
   margin: 2% 0;
 }
 strong {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 body {
   background: rgba(0, 0, 0, 0.068);
@@ -273,7 +273,6 @@ body header nav .nav-links a {
   text-decoration: none;
 }
 body header nav .nav-links a:active {
-  border-bottom: 5px solid #FEE715FF;
   font-size: 2rem;
 }
 @media (max-width:500px) {
@@ -301,21 +300,10 @@ body header nav #sign a {
   text-align: center;
   text-decoration: none;
 }
-<<<<<<< HEAD
 @media (max-width:500px) {
   body header nav #sign a {
-=======
-body header nav a:focus {
-  border-bottom: 5px solid #8b8788;
-}
-@media (max-width:500px) {
-  body header nav a {
->>>>>>> 9959176c9c5bbf780b1509c4440782e372570397
     padding: 1%;
   }
-}
-.rider-link a:active {
-  border-bottom: 5px solid #8b8788;
 }
 footer {
   height: 15vh;
