@@ -1,0 +1,139 @@
+body{
+    
+    background: rgba(0, 0, 0, 0.068);
+    a{
+        color:#FEE715FF;
+    }
+    
+
+header {
+    .dis_flx(space-between, none,column);
+    // border:solid;
+    // padding: 1% 2%;
+    width:94%;
+    margin: 0 2.5%;
+    // padding: 0 2%;
+    .header-img{
+        
+        width:100%;
+        background-color: #FEE715FF;
+        color:#101820FF;
+        // margin:0 2.5%;
+        // padding: 2%;
+        background-image: url("../img/header-img.png");
+    
+        background-repeat: no-repeat;
+        background-position:right;
+       
+        height:35vh;
+        @media @mobile{
+            background-image: none;
+            height: 20vh;
+        }
+       
+        .header-img-info{
+           
+            width:55%;
+            padding:7% 0 0 2%;
+            height:24vh;
+            @media @mobile{
+                width:100%;
+                font-size: medium;
+                text-align: center;
+                
+    
+            }
+            
+            h2{
+               
+                font-size: 1.5rem;
+            }
+            p{
+                
+                font-size: 1.2rem;
+            }
+           
+        }
+    }
+   
+    nav{
+       padding: 1% 0;
+        .dis_flx(space-between, center,row);
+        height: 10vh;
+        font-size: 2vw;
+        color:#FEE715FF;
+        background:#101820FF;
+        font-weight: 600;
+    // media query    
+        @media @mobile{
+            font-size: 0.8rem;
+            .dis_flx(space-between, center,column);
+            height: 25vh;
+
+        }
+       
+
+        #logo {
+            width:10%;
+            background:#FEE715FF;
+             // media query    
+        @media @mobile{
+           display: none;
+        width:20%;
+
+        }
+           
+          
+        }
+        .nav-links { 
+            
+            .dis_flx(space-around, center,row);
+            width:50%;
+            margin:0 10%;
+            
+            #home-tab {
+                @media @mobile{
+                    display: inline;
+                }
+                display: none;
+            }
+         // media query    
+         @media @mobile{
+            font-size: 1.2rem;
+            .dis_flx(space-between, center,column);
+
+        }
+            a{
+                &:active {
+                    border-bottom: 5px solid  #FEE715FF;
+                    font-size:2rem;
+                }
+                text-align: center;
+                text-decoration: none;
+           
+                @media @mobile{
+                    padding:1%;
+                }
+            }
+            
+        } //end of nav links
+      
+            a{
+                &:focus {
+                    border-bottom: 5px solid #8b8788;
+                }  
+                text-align: center;
+                            
+                text-decoration: none;
+                @media @mobile{
+                    padding:1%;
+                }
+            }
+      
+
+    } // end of nav
+    
+}
+}
+
+
