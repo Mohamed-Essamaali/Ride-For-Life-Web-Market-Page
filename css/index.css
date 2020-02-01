@@ -301,8 +301,16 @@ body header nav #sign a {
   text-align: center;
   text-decoration: none;
 }
+<<<<<<< HEAD
 @media (max-width:500px) {
   body header nav #sign a {
+=======
+body header nav a:focus {
+  border-bottom: 5px solid #8b8788;
+}
+@media (max-width:500px) {
+  body header nav a {
+>>>>>>> 9959176c9c5bbf780b1509c4440782e372570397
     padding: 1%;
   }
 }
