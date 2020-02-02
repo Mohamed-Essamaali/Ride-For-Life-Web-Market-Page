@@ -160,6 +160,12 @@ body {
 strong {
   font-size: 1.5rem;
 }
+.about-group {
+  background-image: linear-gradient(#babda1, #25d68e);
+  width: 90%;
+  margin: 0 2.5%;
+  padding: 2%;
+}
 .group-members {
   display: flex;
   justify-content: space-around;
@@ -167,23 +173,33 @@ strong {
   flex-direction: row;
   flex-wrap: wrap;
   width: 90%;
-  margin: 2% 2.5%;
+  margin: 0 2.5%;
   padding: 0 2%;
+  background-color: rgba(211, 211, 82, 0.664);
 }
 .group-members .member {
-  width: 35vw;
-  height: 65vh;
+  text-align: center;
+  width: 35%;
+  height: 60%;
   margin: 2%;
 }
 .group-members .member h3 {
   font-size: 2rem;
 }
 .group-members .member img {
-  width: 22vw;
-  height: 40vh;
+  margin-top: 2%;
+  border-radius: 100%;
+  width: 30%;
+  height: 30%;
+}
+.action-btn {
+  padding: 2%;
+  border-radius: 5px;
+  background-color: #f1f1d3;
 }
 body {
   background: rgba(0, 0, 0, 0.068);
+  margin-top: 2% ;
 }
 body a {
   color: #FEE715FF;
@@ -240,7 +256,7 @@ body header nav {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  height: 10vh;
+  height: 8vh;
   font-size: 2vw;
   color: #FEE715FF;
   background: rgba(36, 34, 34, 0.781);
@@ -255,9 +271,30 @@ body header nav {
     height: 25vh;
   }
 }
+@media (max-width:650px) {
+  body header nav {
+    font-size: 1rem;
+  }
+}
+@media (max-width:850px) {
+  body header nav {
+    font-size: 1.1rem;
+  }
+}
 body header nav #logo {
   width: 10%;
   background: #FEE715FF;
+  height: 12vh;
+}
+@media (max-width:650px) {
+  body header nav #logo {
+    height: 9.5vh;
+  }
+}
+@media (max-width:850px) {
+  body header nav #logo {
+    height: 10vh;
+  }
 }
 @media (max-width:500px) {
   body header nav #logo {
@@ -304,10 +341,11 @@ body header nav .nav-links a:active {
 }
 body header nav #sign {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   width: 25%;
+  margin-right: 2%;
 }
 @media (max-width:500px) {
   body header nav #sign {
@@ -316,6 +354,11 @@ body header nav #sign {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+  }
+}
+@media (max-width:650px) {
+  body header nav #sign {
+    font-size: 1rem;
   }
 }
 body header nav #sign a {

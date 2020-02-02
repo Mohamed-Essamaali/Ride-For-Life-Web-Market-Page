@@ -90,26 +90,45 @@ strong {
     font-size: 1.5rem;
 }
 // style about page
-
+.about-group {
+    background-image: linear-gradient(#babda1,#25d68e);
+width:90%;
+margin:0 2.5%;
+padding:2%;
+}
 .group-members {
     // border:solid;
     .dis_flx(space-around, center,row);
     flex-wrap: wrap;
     width:90%;
-    margin:2% 2.5%;
+    margin:0 2.5%;
     padding:0 2%;
+    background-color: @header-bg-img;
     .member {
+       text-align: center;
        
-        width:35vw;
-        height:65vh;
+        width:35%;
+        height:60%;
         margin:2%;
         h3{
             font-size:2rem
         }
 
         img{
-            width:22vw;
-            height:40vh;
+            margin-top:2%;
+            border-radius: 100%;
+            width:30%;
+            height:30%;
         }
     }
+}
+
+//action button
+
+.action-btn {
+    padding:2%;
+    border-radius: 5px;
+    background-color: #f1f1d3;
+
+
 }

@@ -1,6 +1,7 @@
 body{
     
     background: rgba(0, 0, 0, 0.068);
+    margin-top: 2% ;
     a{
         color:#FEE715FF;
     }
@@ -9,21 +10,7 @@ header {
     .dis_flx(space-between, none,column);
     width:94%;
     margin: 0 2.5%;
- //---------------
-//  .bg-style::after{
-//     // background-image: url("../img/header-img.png");
-   
-//     content: ""; // ::before and ::after both require content
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-image: linear-gradient(120deg, #dde012, #ff7433);
-//     opacity: .7;
-//     }
 
-    //------------
 
 // header image    
     .header-img{
@@ -76,7 +63,7 @@ header {
     nav{
        padding: 1% 0;
         .dis_flx(space-between, center,row);
-        height: 10vh;
+        height: 8vh;
         font-size: 2vw;
         color:@color-nav;
         background:@bg-nav;
@@ -88,15 +75,30 @@ header {
             height: 25vh;
 
         }
-       
+        @media @tablet650 {
+            font-size: 1rem;
+        }
+        @media @tablet850 {
+            font-size: 1.1rem;
+        }
 
         #logo {
             width:10%;
             background:@color-nav;
-             // media query    
+            height:12vh;
+            // media 650& 750 
+
+            @media @tablet650 {
+                height: 9.5vh;
+            }
+            @media @tablet850 {
+                height: 10vh;
+            }
+
         @media @mobile{
            display: none;
         width:20%;
+      
 
         }
            
@@ -136,13 +138,18 @@ header {
             
         } //end of nav links
         #sign {
-            .dis_flx(space-evenly, center,row);
+            .dis_flx(space-between, center,row);
             width:25%;
+            margin-right:2%;
             @media @mobile{
                 font-size: 1.2rem;
                 .dis_flx(space-between, center,column);
     
                 }
+                @media @tablet650{
+                  font-size: 1rem;
+                            
+                    }
 
             a{
                 
