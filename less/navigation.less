@@ -2,8 +2,10 @@ body{
     
     background: rgba(0, 0, 0, 0.068);
     margin-top: 2% ;
-    a{
-        color:#FEE715FF;
+}
+   
+a{
+        color:@color-nav;
     }
     
 header {
@@ -12,98 +14,52 @@ header {
     margin: 0 2.5%;
 
 
-// header image    
-    .header-img{
 
-      
-        
-        width:100%;
-        color:@header-color-img;
-        background-color: @header-bg-img;
-
-        background-image: url("../img/header-img.png");
-       
-        background-repeat: no-repeat;
-        background-position:75%, 3%;
-        // background-size:cover;
-        // background-image: linear-gradient(  #FEE715FF,rgba(236, 226, 133, 0.514));
-        height:45vh;
-        @media @mobile{
-            background-image: none;
-            height: 25vh;
-        }
-       
-       
-        .header-img-info{
-           
-            width:55%;
-            padding:7% 0 0 2%;
-            height:24vh;
-            @media @mobile{
-                width:100%;
-                font-size: medium;
-                text-align: center;
-            }            
-            h2{
-               
-                font-size: 2rem;
-                @media @mobile{
-                    font-size: 1.5rem;
-                }
-            }
-            p{
-                
-                font-size: 1.2rem;
-              
-            }
-           
-        }
-    }
    
     nav{
-       padding: 1% 0;
+    //    padding: 1% 0;
         .dis_flx(space-between, center,row);
-        height: 8vh;
-        font-size: 2vw;
+        height: 10%;
+        font-size: 1.5rem;
         color:@color-nav;
         background:@bg-nav;
-        // font-weight: 600;
+        
     // media query    
         @media @mobile{
             font-size: 0.8rem;
             .dis_flx(space-between, center,column);
-            height: 25vh;
+            height: 20%;;
 
         }
         @media @tablet650 {
             font-size: 1rem;
+          
         }
         @media @tablet850 {
             font-size: 1.1rem;
+            height:25%;
         }
 
         #logo {
             width:10%;
-            background:@color-nav;
-            height:12vh;
+            background:WHITE;//@color-nav
+            height:100%;
             // media 650& 750 
 
             @media @tablet650 {
-                height: 9.5vh;
+                height: 100%;
             }
             @media @tablet850 {
-                height: 10vh;
+                height: 100%;
             }
 
         @media @mobile{
            display: none;
-        width:20%;
-      
+            
+        }
+                     
+        } // end logo
 
-        }
-           
-          
-        }
         .nav-links { 
             
             .dis_flx(space-evenly, center,row);
@@ -137,35 +93,81 @@ header {
             }
             
         } //end of nav links
+
         #sign {
             .dis_flx(space-between, center,row);
-            width:25%;
+            width:20%;
             margin-right:2%;
             @media @mobile{
                 font-size: 1.2rem;
                 .dis_flx(space-between, center,column);
-    
+
                 }
                 @media @tablet650{
                   font-size: 1rem;
+                  width:25%;
                             
                     }
 
             a{
                 
-                text-align: center;
-                            
+                text-align: center;        
                 text-decoration: none;
                 @media @mobile{
                     padding:1%;
                 }
             }
       
-        }
+        }// end log in 
+
     } // end of nav
+
+    // header image    
+    .header-img{
+ 
+        width:100%;
+        color:@header-color-img;
+        background-color: @header-bg-img;
+        background-image: url("../img/header-img.png");
+        background-repeat: no-repeat;
+        background-position:75%, 3%;
+        height:60%;
+        padding:5% 0;
+        @media @mobile{
+            background-image: none;
+            height: 45%;
+        }
+       
+       
+        .header-img-info{
+           
+            width:55%;
+            padding:7% 0 0 2%;
+            height:24vh;
+            @media @mobile{
+                width:100%;
+                font-size: medium;
+                text-align: center;
+               
+            }            
+            h2{
+               
+                font-size: 2rem;
+                @media @mobile{
+                    font-size: 1.5rem;
+                }
+            }
+            p{
+                
+                font-size: 1.2rem;
+              
+            }
+           
+        }
+    }
     
 }
-}
+
 
 
 
