@@ -68,59 +68,80 @@ body {
     width:90%;
     margin: 0 2.5%;
     padding:2%;
-    background-image: linear-gradient( rgb(233, 91, 76);rgba(199, 118, 118, 0.541));
+    background-image: linear-gradient(#dbce86a8,@content-bg);
+    // background-color:@content-bg;
     color: @content-color;
-    h2{
-        font-size: 2rem;
+    .dis_flx(space-between, center,row);
+    flex-wrap: wrap;
+    @media @mobile{
+        .dis_flx(space-between, center,column);   
+        
+       
     }
-    .btn {
-       display: inline-block;
-        font-size: 1.3rem;
-        padding: .6%;
-        border-radius: 8px;
-        background-color: #e4877b;
-        text-shadow: white;
-        border: none;
-        text-decoration: none;
-        margin:2% 0;
+    .about-text{
+       
+        width:40%;
+        padding:7% 5%;
+        @media @mobile{
+            width:90%;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    }
+    img {
+        width:30vw;
+        height:45vh;
+        padding:2%;
+        @media @mobile{
+            width:90%;
+        }
     }
    
+}
+.reverse-section{
+    @media @mobile{
+    .dis_flx(space-between, center,column-reverse);   
+    }
 }
 strong {
     font-size: 1.5rem;
 }
+
+
+
+
 // style about page
 .about-group {
-    background-image: linear-gradient(#babda1,#25d68e);
-width:90%;
-margin:0 2.5%;
-padding:2%;
-}
-.group-members {
-    // border:solid;
-    .dis_flx(space-around, center,row);
-    flex-wrap: wrap;
+    background-image: linear-gradient(#e7ee859f,#dbcf5e5d);
     width:90%;
     margin:0 2.5%;
-    padding:0 2%;
-    background-color: @header-bg-img;
-    .member {
-       text-align: center;
-       
-        width:35%;
-        height:60%;
-        margin:2%;
-        h3{
-            font-size:1.5rem
-        }
+    padding:2%;
+}
+    .group-members {
+        // border:solid;
+        .dis_flx(space-around, center,row);
+        flex-wrap: wrap;
+        width:90%;
+        margin:0 2.5%;
+        padding:0 2%;
+        background-color: @header-bg-img;
+        .member {
+            text-align: center;
+            width:35%;
+            height:60%;
+            margin:2%;
+            h3{
+                font-size:1.5rem
+            }
 
-        img{
-            margin-top:2%;
-            border-radius: 100%;
-            width:40%;
-            height:40%;
+            img{
+                margin-top:2%;
+                border-radius: 100%;
+                width:40%;
+                height:40%;
+            }
         }
-    }
 }
 
 //action button
@@ -129,7 +150,7 @@ padding:2%;
     margin-top:5%;
     padding:2%;
     border-radius: 5px;
-    background-color: #f1f1d3;
+    background-color: #ebebc1a6;
     font-size:1.3rem
 
 

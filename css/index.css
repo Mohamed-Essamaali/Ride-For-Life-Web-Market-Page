@@ -140,28 +140,57 @@ body {
   width: 90%;
   margin: 0 2.5%;
   padding: 2%;
-  background-image: linear-gradient(#e95b4c, rgba(199, 118, 118, 0.541));
-  color: #f3f709;
+  background-image: linear-gradient(#dbce86a8, #ebe48559);
+  color: #101820FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.about-section h2 {
+@media (max-width:500px) {
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.about-section .about-text {
+  width: 40%;
+  padding: 7% 5%;
+}
+@media (max-width:500px) {
+  .about-section .about-text {
+    width: 90%;
+  }
+}
+.about-section .about-text h2 {
   font-size: 2rem;
 }
-.about-section .btn {
-  display: inline-block;
-  font-size: 1.3rem;
-  padding: 0.6%;
-  border-radius: 8px;
-  background-color: #e4877b;
-  text-shadow: white;
-  border: none;
-  text-decoration: none;
-  margin: 2% 0;
+.about-section img {
+  width: 30vw;
+  height: 45vh;
+  padding: 2%;
+}
+@media (max-width:500px) {
+  .about-section img {
+    width: 90%;
+  }
+}
+@media (max-width:500px) {
+  .reverse-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
 }
 strong {
   font-size: 1.5rem;
 }
 .about-group {
-  background-image: linear-gradient(#babda1, #25d68e);
+  background-image: linear-gradient(#e7ee859f, #dbcf5e5d);
   width: 90%;
   margin: 0 2.5%;
   padding: 2%;
@@ -175,7 +204,7 @@ strong {
   width: 90%;
   margin: 0 2.5%;
   padding: 0 2%;
-  background-color: rgba(211, 211, 82, 0.664);
+  background-color: #ebe48559;
 }
 .group-members .member {
   text-align: center;
@@ -196,7 +225,7 @@ strong {
   margin-top: 5%;
   padding: 2%;
   border-radius: 5px;
-  background-color: #f1f1d3;
+  background-color: #ebebc1a6;
   font-size: 1.3rem;
 }
 body {
@@ -288,6 +317,7 @@ header nav .nav-links #home-tab {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    padding: 2%;
   }
 }
 header nav .nav-links a {
@@ -299,7 +329,9 @@ header nav .nav-links a:active {
 }
 @media (max-width:500px) {
   header nav .nav-links a {
-    padding: 1%;
+    padding: 2% 0;
+    width: 185%;
+    border-bottom: 1px solid;
   }
 }
 header nav #sign {
@@ -331,46 +363,53 @@ header nav #sign a {
 }
 @media (max-width:500px) {
   header nav #sign a {
-    padding: 1%;
+    font-size: 1.1rem;
+    align-self: center;
+    padding: 2% 0;
+    width: 365%;
+    border-bottom: 1px solid;
+  }
+  header nav #sign a:nth-of-type(2) {
+    border: none;
+    padding: 6% 0;
   }
 }
-header .header-img {
-  width: 100%;
-  color: #101820FF;
-  background-color: rgba(211, 211, 82, 0.664);
-  background-image: url("../img/header-img.png");
+header .header-img-info {
+  background-image: linear-gradient(rgba(20, 10, 1, 0.6), rgba(50, 70, 30, 0.6)), url("../img/ride-header.jpg");
   background-repeat: no-repeat;
-  background-position: 75%, 3%;
-  height: 60%;
-  padding: 5% 0;
+  background-size: cover;
+  background-position: center;
+  background-color: #ebe48559;
+  padding: 10% 2%;
 }
 @media (max-width:500px) {
-  header .header-img {
+  header .header-img-info {
     background-image: none;
-    height: 45%;
   }
 }
-header .header-img .header-img-info {
-  width: 55%;
-  padding: 7% 0 0 2%;
-  height: 24vh;
+header .header-img-info .info {
+  width: 45%;
+  padding: 7% 0 0 10%;
+  height: 25%;
+  color: white;
 }
 @media (max-width:500px) {
-  header .header-img .header-img-info {
-    width: 100%;
+  header .header-img-info .info {
+    width: 80%;
     font-size: medium;
     text-align: center;
+    color: rgba(36, 34, 34, 0.781);
   }
 }
-header .header-img .header-img-info h2 {
+header .header-img-info .info h2 {
   font-size: 2rem;
 }
 @media (max-width:500px) {
-  header .header-img .header-img-info h2 {
+  header .header-img-info .info h2 {
     font-size: 1.5rem;
   }
 }
-header .header-img .header-img-info p {
+header .header-img-info .info p {
   font-size: 1.2rem;
 }
 footer {
